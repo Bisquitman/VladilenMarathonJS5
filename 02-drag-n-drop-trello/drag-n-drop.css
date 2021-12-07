@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /*background-color: #e5e5e5;*/
+  background: linear-gradient(0deg, #336262 0%, #f8e6c0 100%), no-repeat;
+  height: 100vh;
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  justify-content: left;
+  overflow: hidden;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  width: 625px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 200px;
+  box-shadow: 4px 4px 9px rgba(155, 155, 155, 0.36);
+  padding: 0.8rem 1rem;
+  color: #fff;
+}
+
+.item {
+  width: 190px;
+  height: 66px;
+  border: 0px solid #eee;
+  box-shadow: 1px 1px 9px rgba(198, 198, 198, 1.36);
+  border-radius: 0px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: left;
+  cursor: grab;
+  resize: vertical;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 200px;
+  height: 80vh;
+  background-color: rgba(00 88 88 / 0.05);
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 0;
+}
+
+.placeholder::-webkit-scrollbar {
+  overflow: scroll;
+  opacity: .1;
+  width: 8px;               /* ширина scrollbar */
+}
+.placeholder::-webkit-scrollbar-track {
+  background: rgba(23, 163, 238, 0.3);        /* цвет дорожки */
+  opacity: .1;
+}
+.placeholder::-webkit-scrollbar-thumb {
+  background: rgba(0, 157, 255, 0.58);    /* цвет плашки */
+  border: 0px solid white;  /* padding вокруг плашки */
+}
+
+#spacer {
+  width: 200px;
+  height: 55px;
+  background-color: rgba(88 88 88 / 0.05);
+}
+
+.start {
+  background: linear-gradient(90deg, #ffe259 0%, #ffa751 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #799F0C 0%, #ACBB78 100%);
+}
+
+.hold {
+  border: 5px solid #eee;
+}
+
+.hide {
+  display: none;
+}
+
+.placeholder + .hovered {
+  /*border-top: 5px solid #8ed6ed;*/
+}
+.item + .hovered  {
+  // background-color: red;
+  margin-bottom: 50px;
+  z-index: 500;
+}
+
+#trash {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 0, 0, 0.38);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -80px; left: -30px;
+  padding-top: 50px;
+  font: "Arial Black" ;
+  font-size: xxx-large;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  z-index: 10;
+}
+
+
+.adder {
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 255, 0, 0.38);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px; left: -10px;
+  padding-top: 20px;
+  font: "Arial Black" ;
+  font: "Arial Black" ;
+  font-size: xx-large;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  z-index: 5;
+}
+
